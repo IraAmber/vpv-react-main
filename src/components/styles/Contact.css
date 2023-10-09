@@ -50,3 +50,14 @@
 .contact-form textarea {
   resize: vertical;
 }
+
+@media (max-width: 768px) {
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-method-btn {
+    margin: 10px 0;
+  }
+}

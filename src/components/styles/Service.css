@@ -50,3 +50,9 @@ ul,
   object-fit: cover;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  .service-image {
+    display: none;
+  }
+}
