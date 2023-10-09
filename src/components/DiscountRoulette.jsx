@@ -34,9 +34,12 @@ const DiscountRoulette = () => {
     buttonText: "Start", // Текст кнопки
     isOnlyOnce: true, // Дозволити більше одного спроби
     size: 190, // Розмір спінера
-    upDuration: 500, // Тривалість обертання вгору (в мілісекундах)
-    downDuration: 600, // Тривалість обертання вниз (в мілісекундах)
-    fontFamily: 'Montserrat' // Шрифт тексту сегмента
+    upDuration: 400, // Тривалість обертання вгору (в мілісекундах)
+    downDuration: 500, // Тривалість обертання вниз (в мілісекундах)
+    fontFamily: 'Montserrat', // Шрифт тексту сегмента
+    centerX: 300, // Горизонтальне положення центру спінера в контейнері
+    centerY: 300, // Вертикальне положення центру спінера в контейнері
+    
   };
 
   return (
@@ -48,7 +51,7 @@ const DiscountRoulette = () => {
           segColors={segColors}
           // winningSegment="MM"
           onFinished={(winner) => onFinished(winner)}
-   
+          {...customStyle}
         />
       </div>
     </div>
