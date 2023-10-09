@@ -1,18 +1,21 @@
 .DiscountRoulette-container {
+  padding: 20px 0;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+#wheel {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Центруємо по вертикалі */
-  padding-top: 20px;
-  margin: 0;
+  justify-content: center; 
   width: 70%;
-
+  margin: 0 auto; 
 }
 
-.DiscountRoulette-spinner {
+.canvas {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* Центруємо спінер по горизонталі та вертикалі */
+  width: 70%;
+  margin: 0 auto;
 }
-
