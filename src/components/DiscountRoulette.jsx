@@ -31,7 +31,7 @@ const DiscountRoulette = () => {
     innerBorderColor: "white", // Колір внутрішнього рамки
     primaryColor: "black", // Колір стрілки і обводки сегмента
     contrastColor: "white", // Колір тексту сегмента
-    buttonText: "Start", // Текст кнопки
+    buttonText: "Старт", // Текст кнопки
     isOnlyOnce: true, // Дозволити більше одного спроби
     size: 190, // Розмір спінера
     upDuration: 400, // Тривалість обертання вгору (в мілісекундах)
@@ -39,7 +39,9 @@ const DiscountRoulette = () => {
     fontFamily: 'Montserrat', // Шрифт тексту сегмента
     centerX: 300, // Горизонтальне положення центру спінера в контейнері
     centerY: 300, // Вертикальне положення центру спінера в контейнері
-    
+    numberPrefix: 'Результат: ',
+    ww: 660,
+    hh: 550,
   };
 
   return (
@@ -47,6 +49,7 @@ const DiscountRoulette = () => {
       <h2>Твоя знижка</h2>
       <div className="DiscountRoulette-spinner">
         <WheelComponent
+      
           segments={segments}
           segColors={segColors}
           // winningSegment="MM"
