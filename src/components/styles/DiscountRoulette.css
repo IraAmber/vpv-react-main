@@ -1,0 +1,16 @@
+.DiscountRoulette-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Центруємо по вертикалі */
+    height: 100vh; /* Займає висоту всього вікна */
+    margin: 0;
+  }
+  
+  .DiscountRoulette-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Центруємо спінер по горизонталі та вертикалі */
+  }
+  
